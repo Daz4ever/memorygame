@@ -1,0 +1,38 @@
+.mytable {
+  text-align: center;
+  margin: 0px auto;
+  margin-top: 200px;
+  border-collapse: collapse;
+}
+
+.boxes {
+  border: 10px solid #D0CCD0;
+  text-align: center;
+
+}
+
+.square {
+  border: 0;
+  color: white;
+  background-color: white;
+  font-size: 5em;
+  font-weight: 300;
+  background-color: white;
+  height: 140px;
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.backCard {
+  height: 300px;
+  width: 300px;
+}
+
+.backCard img {
+  margin: auto;
+  margin-top: 40%;
+
+}

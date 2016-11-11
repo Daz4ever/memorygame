@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="angular1.js"></script>
+    <script src="memorygame.js"></script>
+
+
+    <title>memorygame</title>
+  </head>
+  <body ng-app="my-app" ng-controller="MemoryGame">
+    <!-- <table class="mytable">
+      <tr class="tablerow">
+        <td class= "boxes boxes1"><img class="square" id="one" src=""/></td>
+        <td class= "boxes boxes2"><img class="square" id="two" src=""/></td>
+        <td class= "boxes boxes3"><img class="square" id="three" src=""/></td>
+        <td class= "boxes boxes4"><img class="square" id="four" src=""/></td>
+      </tr>
+      <tr class="tablerow">
+        <td class= "boxes boxes5"><img class="square" id="five" src=""/></td>
+        <td class= "boxes boxes6"><img class="square" id="six" src=""/></td>
+        <td class= "boxes boxes7"><img class="square" id="seven" src=""/></td>
+        <td class= "boxes boxes8"><img class="square" id="eight" src=""/></td>
+      </tr>
+
+    </table> -->
+
+    <table class="mytable">
+      <tr class="tablerow" ng-repeat="row in cards">
+        <td class="boxes" ng-repeat="card in row">
+          <div class="card" ng-show="card.open" >
+            <a ng-click="openClosed($parent.$index, $index)"><img ng-src="{{ card.url }}" /></a>
+          </div>
+            <a ng-click="openClosed($parent.$index, $index)"><div class="backCard" ng-hide="card.open"><img ng-src="{{ card.backCard }}" /></div></a>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
