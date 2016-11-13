@@ -10,7 +10,7 @@ function Card(url) {
 var card1 = new Card("images/monsters-01.png");
 var card2 = new Card("images/monsters-02.png");
 var card3 = new Card("images/monsters-03.png");
-var card4 = new Card("images/monsters-04.png");
+var card4 = new Card("images/monsters-05.png");
 
 app.controller('MemoryGame', function($scope, $timeout) {
 $scope.state = "first";
