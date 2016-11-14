@@ -30,9 +30,15 @@
       <tr class="tablerow" ng-repeat="row in cards">
         <td class="boxes" ng-repeat="card in row">
           <div class="card" ng-show="card.open" >
-            <a ng-click="openClosed($parent.$index, $index)"><img ng-src="{{ card.url }}" /></a>
+            <a ng-click="openClosed($parent.$index, $index)">
+              <img ng-src="{{ card.url }}" />
+            </a>
           </div>
-            <a ng-click="openClosed($parent.$index, $index)"><div class="backCard" ng-hide="card.open"><img ng-src="{{ card.backCard }}" /></div></a>
+            <a ng-click="openClosed($parent.$index, $index)">
+              <div class="backCard" ng-hide="card.open">
+                <img ng-src="{{ card.backCard }}" />
+              </div>
+            </a>
         </td>
       </tr>
     </table>
